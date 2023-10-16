@@ -58,6 +58,7 @@ input {
   color: white;
   background-color: #6083ff;
   border-radius: 0.2rem;
+  cursor: pointer;
 }
 
 .title {

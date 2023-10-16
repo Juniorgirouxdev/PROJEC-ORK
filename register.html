@@ -13,7 +13,7 @@
     <title>Register</title>
   </head>
   <body>
-    <form action="" autocomplete="off">
+    <form id="formulario" autocomplete="off">
       <div class="titulo">
         <h1>Faça login na sua conta</h1>
       </div>
@@ -22,36 +22,31 @@
         type="text"
         name="name"
         id="name"
-        required
         placeholder="Digite seu nome completo"
       />
 
-
-
       <input
         type="email"
-        id="Email"
-        name="Email"
-        required
+        id="email"
+        name="email"
         placeholder="Digite seu email"
       />
 
       <input
         type="password"
-        id="Senha"
-        name="Senha"
-        required
+        id="senha"
+        name="senha"
         placeholder="Digite sua senha"
       />
 
       <input
         type="password"
-        id="Repetir"
-        name="Repetir"
-        required
+        id="repetir"
+        name="repetir"
         placeholder="Digite sua senha novamente"
       />
-      <button class="botao">Entrar</button>
+      <button type="submit" class="botao" id="botao">Entrar</button>
+      <span id="nameError"></span>
     </form>
 
     <footer>
@@ -60,4 +55,5 @@
       </div>
     </footer>
   </body>
+  <script src="./script/register.js"></script>
 </html>
