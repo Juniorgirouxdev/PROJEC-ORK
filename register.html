@@ -3,7 +3,64 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/ />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/register.css" />
     <title>Register</title>
   </head>
-  <body></body>
+  <body>
+    <form id="formulario" autocomplete="off">
+      <div class="titulo">
+        <h1>Faça login na sua conta</h1>
+      </div>
+
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Digite seu nome completo"
+      />
+      <span class="spanName">* Campo obrigatório, insira no mínimo 5 caracters.</span>
+
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Digite seu email"
+      />
+      <span class="spanEmail">* Campo obrigatório, escreva um email válido.</span>
+
+      <input
+        type="password"
+        id="senha"
+        name="senha"
+        placeholder="Digite sua senha"
+      />
+      <span class="spanSenha">* Campo obrigatório, a senha deve ter no mínimo 6 caracteres.</span>
+
+      <input
+        type="password"
+        id="repetir"
+        name="repetir"
+        placeholder="Digite sua senha novamente"
+      />
+      <span class="spanRepetir">* Campo obrigatório, senha e confirmar senha devem ser iguais.</span>
+
+      <button type="submit" class="botao" id="botao" onclick="cadastrar()">
+        Entrar
+      </button>
+      <span id="nameError"></span>
+    </form>
+
+    <footer>
+      <div class="title">
+        <p>já possui uma conta? <a href="./login.html">faça login aqui.</a></p>
+      </div>
+    </footer>
+  </body>
+  <script src="./script/register.js"></script>
 </html>
