@@ -21,18 +21,17 @@ form {
   padding: 4rem 3rem;
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   gap: 10px;
 }
 
-input:invalid:focus {
+/* input:invalid:focus {
   border-bottom: 2px solid #dc2f2f;
 }
 
 input:valid:focus {
   border-bottom: 2px solid #6083ff;
-}
+} */
 
 .titulo h1 {
   color: #000;
@@ -41,6 +40,7 @@ input:valid:focus {
   height: 100%;
   width: 100%;
   margin: 1rem auto;
+  text-align: center;
 }
 
 input {
@@ -73,4 +73,14 @@ input {
 
 .title a {
   text-decoration: none;
+}
+
+form span{
+  display: flex;
+  font-size: 12px;
+  color: #f78b8b;
+  align-items: start;
+  margin-left: 8px;
+  margin-top: -12px;
+  display: none;
 }

@@ -24,6 +24,7 @@
         id="name"
         placeholder="Digite seu nome completo"
       />
+      <span class="spanName">* Campo obrigatório, insira no mínimo 5 caracters.</span>
 
       <input
         type="email"
@@ -31,6 +32,7 @@
         name="email"
         placeholder="Digite seu email"
       />
+      <span class="spanEmail">* Campo obrigatório, escreva um email válido.</span>
 
       <input
         type="password"
@@ -38,6 +40,7 @@
         name="senha"
         placeholder="Digite sua senha"
       />
+      <span class="spanSenha">* Campo obrigatório, a senha deve ter no mínimo 6 caracteres.</span>
 
       <input
         type="password"
@@ -45,7 +48,11 @@
         name="repetir"
         placeholder="Digite sua senha novamente"
       />
-      <button type="submit" class="botao" id="botao">Entrar</button>
+      <span class="spanRepetir">* Campo obrigatório, senha e confirmar senha devem ser iguais.</span>
+
+      <button type="submit" class="botao" id="botao" onclick="cadastrar()">
+        Entrar
+      </button>
       <span id="nameError"></span>
     </form>
 
